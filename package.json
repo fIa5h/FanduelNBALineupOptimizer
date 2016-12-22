@@ -1,6 +1,6 @@
 {
   "name": "fanduel_nba_lineup_optimizer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This module contains a closure built on a genetic algorithm that allows you to rapidly spawn optimized NBA FanDuel lineups.",
   "main": "index.js",
   "scripts": {
