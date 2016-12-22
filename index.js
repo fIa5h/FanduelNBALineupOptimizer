@@ -3,7 +3,7 @@
 
 // Genetic Algorithm vs. FanDuel Lineup Optimization
 
-export function spawnEnvironment(population,generations,evolutions,positions,budget,mutations){
+exports.spawnEnvironment = function(population,generations,evolutions,positions,budget,mutations){
   //
   //population (array) == player list
   //
