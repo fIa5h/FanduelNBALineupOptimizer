@@ -1,0 +1,28 @@
+{
+  "name": "fanduel_nba_lineup_optimizer",
+  "version": "1.0.0",
+  "description": "This module contains a closure built on a genetic algorithm that allows you to rapidly spawn optimized NBA FanDuel lineups.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RyanThomasMusser/FanduelNBALineupOptimizer.git"
+  },
+  "keywords": [
+    "fanduel",
+    "nba",
+    "lineup",
+    "optimizer",
+    "genetic",
+    "algorithm",
+    "knapsack"
+  ],
+  "author": "Ryan Musser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RyanThomasMusser/FanduelNBALineupOptimizer/issues"
+  },
+  "homepage": "https://github.com/RyanThomasMusser/FanduelNBALineupOptimizer#readme"
+}
