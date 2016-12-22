@@ -44,8 +44,8 @@ module.exports = {
   Now we're going to check our params to ensure we're
   creating a valid instance of this function/closure
   */
-  if(population.length < 20){
-    console.log('Please pass in atleast 20 players in "population"!');
+  if( (population.length/positions.length) < 4){
+    console.log('Please pass in a larger "population"! You have less than 4 players per position.length!');
     return false;
   }
 
@@ -78,7 +78,7 @@ module.exports = {
     uniquePlayerIds.push(population[iterator].id);
 
     if(position === undefined || positions.indexOf(position) < 0){
-      console.log("The following player doesn't have a properly formatted 'fanduel_positions' node...");
+      console.log("The following player's positions isn't included in your supplied positions, or it doesn't have a properly formatted 'fanduel_positions' node...");
       console.log(population[iterator]);
       return false;
     }
