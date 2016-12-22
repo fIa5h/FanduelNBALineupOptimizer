@@ -1,9 +1,11 @@
 // Ryan Musser
 // http://RyanMusser.com
-
+'use strict';
 // Genetic Algorithm vs. FanDuel Lineup Optimization
 
-module.exports = function spawnEnvironment(population,generations,evolutions,positions,budget,mutations){
+module.exports = {
+
+  spawnEnvironment: function(population,generations,evolutions,positions,budget,mutations){
   //
   //population (array) == player list
   //
@@ -498,4 +500,6 @@ module.exports = function spawnEnvironment(population,generations,evolutions,pos
         //
     };//end of return
 
-}
+  },//end of spawnEnvironment
+
+}//end of module.export
