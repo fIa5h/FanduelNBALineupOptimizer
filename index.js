@@ -226,7 +226,7 @@ module.exports = {
           //calculate projected points
           var fitness = 0;
           lineup.map(function(player){
-            fitness += parseFloat(player.DFS_points);
+            fitness += parseFloat(player._DFSpoints);
           });
           return fitness;
         },
@@ -387,13 +387,13 @@ module.exports = {
             SEARCH FOR HIGHER VALUE PLAYER INSTEAD OF HIGHER POINTS PLAYER
             */
             //
-            var currentDFSValue = player.DFS_points/player.fanduel_price;
+            var currentDFSValue = parseFloat(player._DFSpoints)/parseInt(player.fanduel_price);
             var iterator = 30;
             var foundHigherScore = false;
             var randomPlayer;
             while(iterator >= 0 && !foundHigherScore){
               randomPlayer = this.generateRandomPlayer(player.fanduel_positions);
-              var randomPlayerDFSValue = randomPlayer.DFS_points/randomPlayer.fanduel_price;
+              var randomPlayerDFSValue = parseFloat(randomPlayer._DFSpoints)/parseInt(randomPlayer.fanduel_price);
               if(randomPlayerDFSValue > currentDFSValue){
                 player = randomPlayer;
                 foundHigherScore = true;
