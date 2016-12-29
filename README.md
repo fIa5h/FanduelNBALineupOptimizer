@@ -4,7 +4,7 @@ ___
 ___
 This repo allows you to rapidly generate valid high value lineup pairings for FanDuel using a compounding genetic algorithm. In other words, this is gold for the fantasy sports nerds! You're welcome for open sourcing this ;) Report issues on GitHub. Pull requests more than welcome. Trying to contact me directly? Hit me at ryanthomasmusser@gmail.com
 
-Want to see this algorithm in action? Head to my website BasketballRoto.com and click the green __Optimize Roster__ button and enjoy the magic.
+Want to see this algorithm in action? Head to my website http://BasketballRoto.com and click the green __Optimize Roster__ button and enjoy the magic.
 
 ### Usage directions:
 - Enter your npm initialized project directory and install the library by running:
@@ -56,6 +56,6 @@ ___
 ###### 6) `mutations` - int
 This determines how many mutations each `generation` will create during the breeding process. Try messing around with this number, but I recommend between 3-5. It greatly increases your odds of returning the optimal lineup, but does reach a point of diminishing returns in regards to speed.  As with `generations`, the more `mutations` you include will slow your processing time but increase your odds of finding the optimal lineup.
 ___
-Want to see this algorithm in action? Head to my website BasketballRoto.com and click the green __Optimize Roster__ button and enjoy the magic.
+Want to see this algorithm in action? Head to my website http://BasketballRoto.com and click the green __Optimize Roster__ button and enjoy the magic.
 
 Trying to contact me? Hit me at ryanthomasmusser@gmail.com
